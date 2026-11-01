@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "updated": "2026-11-01",
+  "note": "这是唯一事实来源。README 由 scripts/build_readme.py 从这里生成，请勿手改 README。",
+  "site": {
+    "url": "https://example.com",
+    "label": "查看可复现的在线演示",
+    "utm": "utm_source=github&utm_medium=readme&utm_campaign=awesome-ai-video-prompts-cn"
+  },
+  "categories": [
+    {
+      "id": "motion",
+      "name": "动效图形",
+      "desc": "文字动画、粒子、等距网格、玻璃拟态。最容易被当成「特效」的一段。"
+    },
+    {
+      "id": "explainer",
+      "name": "解说与信息图",
+      "desc": "流程图、数据看板、时间轴、对比图。把一段话说清楚的最小视觉单元。"
+    },
+    {
+      "id": "scene3d",
+      "name": "3D 场景",
+      "desc": "低多边形、无限走廊、主视觉、地球弧线。靠代码而不是建模软件产出。"
+    },
+    {
+      "id": "game",
+      "name": "游戏与交互",
+      "desc": "能被玩的东西。互动性带来的完播率远高于纯播放。"
+    }
+  ],
+  "items": [
+    {
+      "id": "m001",
+      "title": "液态金属文字开场",
+      "category": "motion",
+      "tags": [
+        "canvas",
+        "svg",
+        "文字动画",
+        "金属质感"
+      ],
+      "difficulty": 2,
+      "duration": "6 秒循环",
+      "summary": "铬反射渐变 + 高光扫过 + 水银边缘扰动，适合做 LOGO 开场",
+      "prompt_file": "prompts/m001-液态金属文字开场.md",
+      "cover": null
+    },
+    {
+      "id": "m002",
+      "title": "粒子聚合成汉字",
+      "category": "motion",
+      "tags": [
+        "canvas",
+        "粒子",
+        "文字动画"
+      ],
+      "difficulty": 2,
+      "duration": "5 秒循环",
+      "summary": "3000 个粒子从随机散布收敛成字形，冷暖色过渡",
+      "prompt_file": "prompts/m002-粒子聚合成汉字.md",
+      "cover": null
+    },
+    {
+      "id": "m003",
+      "title": "等距网格数据流",
+      "category": "motion",
+      "tags": [
+        "svg",
+        "等距视角",
+        "数据管道"
+      ],
+      "difficulty": 3,
+      "duration": "8 秒循环",
+      "summary": "手写三维投影的等距管网，光点沿路径流动点亮节点",
+      "prompt_file": "prompts/m003-等距网格数据流.md",
+      "cover": null
+    },
+    {
+      "id": "m004",
+      "title": "玻璃拟态卡片瀑布",
+      "category": "motion",
+      "tags": [
+        "css",
+        "glassmorphism",
+        "竖版"
+      ],
+      "difficulty": 2,
+      "duration": "7 秒",
+      "summary": "9 张毛玻璃卡片依次落位，彩色光斑在背后缓慢漂移",
+      "prompt_file": "prompts/m004-玻璃拟态卡片瀑布.md",
+      "cover": null
+    },
+    {
+      "id": "m005",
+      "title": "故障艺术图片切换",
+      "category": "motion",
+      "tags": [
+        "canvas",
+        "glitch",
+        "像素操作"
+      ],
+      "difficulty": 3,
+      "duration": "4 秒循环",
+      "summary": "RGB 通道分离 + 横条错位 + 扫描线，三段式故障切换",
+      "prompt_file": "prompts/m005-故障艺术图片切换.md",
+      "cover": null
+    },
+    {
+      "id": "m006",
+      "title": "音波律动的极简几何",
+      "category": "motion",
+      "tags": [
+        "canvas",
+        "几何",
+        "节拍模拟"
+      ],
+      "difficulty": 2,
+      "duration": "5 秒循环",
+      "summary": "12 条放射状线条随节拍伸缩，不需要真实音频",
+      "prompt_file": "prompts/m006-音波律动的极简几何.md",
+      "cover": null
+    },
+    {
+      "id": "e001",
+      "title": "三步流程图生长",
+      "category": "explainer",
+      "tags": [
+        "svg",
+        "流程图",
+        "讲解"
+      ],
+      "difficulty": 1,
+      "duration": "6 秒",
+      "summary": "节点逐个长出、连线逐段绘制，最基础也最通用的解说动画",
+      "prompt_file": "prompts/e001-三步流程图生长.md",
+      "cover": null
+    },
+    {
+      "id": "e002",
+      "title": "数字滚动的数据看板",
+      "category": "explainer",
+      "tags": [
+        "css",
+        "数据可视化",
+        "数字动画"
+      ],
+      "difficulty": 2,
+      "duration": "5 秒",
+      "summary": "关键指标从 0 滚到目标值，配柱状图同步生长",
+      "prompt_file": "prompts/e002-数字滚动的数据看板.md",
+      "cover": null
+    },
+    {
+      "id": "e003",
+      "title": "时间轴演化",
+      "category": "explainer",
+      "tags": [
+        "svg",
+        "时间轴",
+        "历史讲解"
+      ],
+      "difficulty": 2,
+      "duration": "8 秒",
+      "summary": "横向时间轴逐段点亮，适合讲「从过去到现在」",
+      "prompt_file": "prompts/e003-时间轴演化.md",
+      "cover": null
+    },
+    {
+      "id": "e004",
+      "title": "分屏对比",
+      "category": "explainer",
+      "tags": [
+        "css",
+        "对比",
+        "before-after"
+      ],
+      "difficulty": 1,
+      "duration": "5 秒",
+      "summary": "左右分屏逐项对比，中间分割线带推拉感",
+      "prompt_file": "prompts/e004-分屏对比.md",
+      "cover": null
+    },
+    {
+      "id": "e005",
+      "title": "爆炸图拆解",
+      "category": "explainer",
+      "tags": [
+        "css-3d",
+        "拆解图",
+        "产品讲解"
+      ],
+      "difficulty": 3,
+      "duration": "6 秒",
+      "summary": "层次沿 Z 轴依次分离，讲清一个复杂东西由什么组成",
+      "prompt_file": "prompts/e005-爆炸图拆解.md",
+      "cover": null
+    },
+    {
+      "id": "e006",
+      "title": "漏斗转化过程",
+      "category": "explainer",
+      "tags": [
+        "svg",
+        "漏斗",
+        "转化率"
+      ],
+      "difficulty": 2,
+      "duration": "5 秒",
+      "summary": "用户从上到下逐级流失，直观呈现每一步损耗",
+      "prompt_file": "prompts/e006-漏斗转化过程.md",
+      "cover": null
+    },
+    {
+      "id": "s001",
+      "title": "低多边形岛屿日夜循环",
+      "category": "scene3d",
+      "tags": [
+        "three.js",
+        "低多边形",
+        "日夜循环"
+      ],
+      "difficulty": 3,
+      "duration": "20 秒循环",
+      "summary": "一座小岛从清晨到夜晚，光线与雾色连续变化",
+      "prompt_file": "prompts/s001-低多边形岛屿日夜循环.md",
+      "cover": null
+    },
+    {
+      "id": "s002",
+      "title": "无限走廊穿梭",
+      "category": "scene3d",
+      "tags": [
+        "three.js",
+        "空间感",
+        "过渡镜头"
+      ],
+      "difficulty": 2,
+      "duration": "12 秒循环",
+      "summary": "镜头在重复结构的走廊里持续推进，适合做开场转场",
+      "prompt_file": "prompts/s002-无限走廊穿梭.md",
+      "cover": null
+    },
+    {
+      "id": "s003",
+      "title": "悬浮芯片主视觉",
+      "category": "scene3d",
+      "tags": [
+        "three.js",
+        "产品主视觉",
+        "发光"
+      ],
+      "difficulty": 3,
+      "duration": "15 秒循环",
+      "summary": "发光芯片悬浮旋转，接口处有光流进出，适合科技产品片头",
+      "prompt_file": "prompts/s003-悬浮芯片主视觉.md",
+      "cover": null
+    },
+    {
+      "id": "s004",
+      "title": "地球数据弧线",
+      "category": "scene3d",
+      "tags": [
+        "three.js",
+        "地球",
+        "弧线",
+        "全球化"
+      ],
+      "difficulty": 3,
+      "duration": "18 秒循环",
+      "summary": "暗色地球缓慢自转，城市之间拉起发光弧线",
+      "prompt_file": "prompts/s004-地球数据弧线.md",
+      "cover": null
+    },
+    {
+      "id": "s005",
+      "title": "抽象流体雕塑",
+      "category": "scene3d",
+      "tags": [
+        "three.js",
+        "shader",
+        "流体"
+      ],
+      "difficulty": 4,
+      "duration": "20 秒循环",
+      "summary": "用噪声着色器让一个球体持续变形，像活着的金属雕塑",
+      "prompt_file": "prompts/s005-抽象流体雕塑.md",
+      "cover": null
+    },
+    {
+      "id": "s006",
+      "title": "室内光影推移",
+      "category": "scene3d",
+      "tags": [
+        "three.js",
+        "室内",
+        "光影"
+      ],
+      "difficulty": 3,
+      "duration": "24 秒循环",
+      "summary": "阳光从窗外扫过房间，影子随时间缓慢移动",
+      "prompt_file": "prompts/s006-室内光影推移.md",
+      "cover": null
+    },
+    {
+      "id": "g001",
+      "title": "打砖块变体",
+      "category": "game",
+      "tags": [
+        "canvas",
+        "游戏",
+        "物理反弹"
+      ],
+      "difficulty": 2,
+      "duration": "可玩",
+      "summary": "经典打砖块，砖块被击中时有粒子爆开，比分实时更新",
+      "prompt_file": "prompts/g001-打砖块变体.md",
+      "cover": null
+    },
+    {
+      "id": "g002",
+      "title": "物理弹跳小球",
+      "category": "game",
+      "tags": [
+        "canvas",
+        "物理",
+        "弹性"
+      ],
+      "difficulty": 2,
+      "duration": "可玩",
+      "summary": "点击生成小球，重力与弹性碰撞，纯粹的物理玩具",
+      "prompt_file": "prompts/g002-物理弹跳小球.md",
+      "cover": null
+    },
+    {
+      "id": "g003",
+      "title": "点击爆破粒子",
+      "category": "game",
+      "tags": [
+        "canvas",
+        "粒子",
+        "交互"
+      ],
+      "difficulty": 1,
+      "duration": "可玩",
+      "summary": "点击任意位置炸开一簇粒子，色彩与力度随机，纯解压",
+      "prompt_file": "prompts/g003-点击爆破粒子.md",
+      "cover": null
+    },
+    {
+      "id": "g004",
+      "title": "极简贪吃蛇",
+      "category": "game",
+      "tags": [
+        "canvas",
+        "游戏",
+        "网格"
+      ],
+      "difficulty": 2,
+      "duration": "可玩",
+      "summary": "去掉一切装饰的贪吃蛇，移动带插值平滑，死亡有溶解效果",
+      "prompt_file": "prompts/g004-极简贪吃蛇.md",
+      "cover": null
+    },
+    {
+      "id": "g005",
+      "title": "磁力场跟随",
+      "category": "game",
+      "tags": [
+        "canvas",
+        "交互",
+        "粒子场"
+      ],
+      "difficulty": 2,
+      "duration": "可玩",
+      "summary": "数百个粒子被鼠标吸引又排斥，移动鼠标即是创作",
+      "prompt_file": "prompts/g005-磁力场跟随.md",
+      "cover": null
+    },
+    {
+      "id": "g006",
+      "title": "节奏点击",
+      "category": "game",
+      "tags": [
+        "canvas",
+        "音游",
+        "节奏"
+      ],
+      "difficulty": 3,
+      "duration": "可玩",
+      "summary": "光点落到判定线时点击，带连击与判定反馈，无需音频文件",
+      "prompt_file": "prompts/g006-节奏点击.md",
+      "cover": null
+    }
+  ]
+}

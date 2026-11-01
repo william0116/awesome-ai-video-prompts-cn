@@ -1,0 +1,32 @@
+name: 校验与重建
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 数据校验
+        run: python3 scripts/lint.py
+
+      - name: 重建 README
+        run: python3 scripts/build_readme.py
+
+      - name: 检查 README 是否已同步
+        run: |
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            echo "::error::README.md 与 data/videos.json 不一致。请本地运行 python3 scripts/build_readme.py 后一并提交。"
+            git diff --stat README.md
+            exit 1
+          fi
+          echo "README 已同步。"
